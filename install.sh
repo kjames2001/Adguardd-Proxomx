@@ -19,7 +19,7 @@ pct exec $number apk add sudo
 pct exec $number apk add bash
 
 pct exec $number -- bash -c 'curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v'
-pct exec $number -- bash -c 'wget https://raw.githubusercontent.com/haris2887/Adguardd-Proxomx/MainBranch/AdguardHome -O /etc/init.d/AdGuardHome'
+pct exec $number -- bash -c 'wget https://raw.githubusercontent.com/kjames2001/Adguardd-Proxomx/MainBranch/AdguardHome -O /etc/init.d/AdGuardHome'
 
 pct exec $number chmod +x /etc/init.d/AdGuardHome
 
