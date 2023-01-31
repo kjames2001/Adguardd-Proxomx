@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 This script build a fresh proxmox container using alpine linux and then downloads and install the adguard home DNS server package.
-It is extreamlight weight container that runs on mionimal resources
+It is extreamlight weight container that runs on minimal resources
 
 NB: haris2887's script didnt work for me, because my local storage can not install lxc containers. Therefore, I added option to specify storage during setup.
 
