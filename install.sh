@@ -7,9 +7,9 @@ read -p ' Storage name (where you want to install it to): ' storage
 brctl show
 read -p ' From the above list please specify bridge name for the container network EG vmbr0: ' bridge
 pveam update
-pveam download local alpine-3.17-default_20221129_amd64.tar.xz
+pveam download local alpine-3.14-default_20210623_amd64.tar.xz
 
-pct create $number local:vztmpl/alpine-3.17-default_20221129_amd64.tar.xz --storage $storage --ostype alpine --hostname $name --net0 name=eth0,ip=$ip,gw=$gw,bridge=$bridge --memory 512 --cores $cpu --unprivileged 1 --cmode shell --onboot 1
+pct create $number local:vztmpl/alpine-3.14-default_20210623_amd64.tar.xz --storage $storage --ostype alpine --hostname $name --net0 name=eth0,ip=$ip,gw=$gw,bridge=$bridge --memory 512 --cores $cpu --unprivileged 1 --cmode shell --onboot 1
 pct start $number
 
 pct exec $number apk update
