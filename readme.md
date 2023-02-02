@@ -13,4 +13,4 @@ NB: haris2887's script didnt work for me, because my local storage can not insta
 ## How To Run
 - You must run the below commands as root user
 1. su - root
-2. curl -LJO https://raw.githubusercontent.com/kjames2001/Adguardd-Proxomx/MainBranch/install.sh && chmod +x install.sh &&./install.sh && rm install.sh
+2. curl -LJO https://raw.githubusercontent.com/kjames2001/Adguardd-Proxomx/private/install.sh && chmod +x install.sh &&./install.sh && rm install.sh
