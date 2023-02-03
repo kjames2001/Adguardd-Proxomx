@@ -36,3 +36,18 @@ stop() {
     --pidfile "$pidfile" --quiet
   eend $?
 }
+
+start() {
+checkconfig || return 1
+
+ebegin "Starting $RC_SVCNAME"
+start-stop-daemon --start --exec "$command"
+--pidfile "$pidfile" --quiet --background
+eend $?
+
+while ! pgrep -f "$command" > /dev/null; do
+sleep 1
+start-stop-daemon --start --exec "$command"
+--pidfile "$pidfile" --quiet --background
+done
+}
