@@ -3,8 +3,8 @@
 # openrc service-script for AdGuardHome
 #
 # place in /etc/init.d/
-# start on boot: "rc-update add adguardhome"
-# control service: "service adguardhome <start|stop|restart|status|checkconfig>"
+# start on boot: "rc-update add AdGuardHome"
+# control service: "service AdGuardHome <start|stop|restart|status|checkconfig>"
 #
 
 description="AdGuard Home: Network-level blocker"
